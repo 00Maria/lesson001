@@ -1,3 +1,6 @@
-a = int(input('Введите число n: '))
-b = (a + int( str(a) + str(a) ) + int ( str(a) + str(a) + str(a)))
-print( str('n+nn+nnn=') + str(b))
+'''Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn.
+Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.'''
+
+a = input('Введите число n: ')
+b = (int(a) + int(a * 2) + int(a * 3))
+print(f'n+nn+nnn={b}')
